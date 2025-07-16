@@ -1,0 +1,6 @@
+.idea/
+.code/
+vendor/
+token.txt
+cache/
+composer.lock

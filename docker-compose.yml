@@ -1,0 +1,9 @@
+services:
+  php:
+    build: .
+    container_name: earthquake
+    stop_signal: "sigkill"
+    volumes:
+      - ./cache:/app/cache
+    working_dir: /app
+    restart: always
