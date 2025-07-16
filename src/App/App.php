@@ -88,7 +88,7 @@ class App {
         }
 
         if(isset($data['points']) && is_array($data['points']) && count($data['points']) > 0){
-           foreach($data['points'] as $number => $point) {
+            foreach($data['points'] as $number => $point) {
                 if(isset($point['addr']) && isset($point['scale'])){
                     $text['발생지역'.($number+1)] = Translator::prefectures($point['pref'] ?? '미상') . ' - '.$point['addr'];
                 }
@@ -115,6 +115,7 @@ class App {
             ],
             'data' => [
                 'status' => $realText,
+                'visibility'=>'unlisted'
             ],
             'json' => true,
             'showHeader' => true
