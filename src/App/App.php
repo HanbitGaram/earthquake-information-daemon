@@ -105,6 +105,7 @@ class App {
         foreach ($text as $key => $value) {
             $realText .= $key . ': ' . $value . "\n";
         }
+        $realText .= "\n#일본지진 #Japan_Earthquake #지진";
 
         $http = new HttpClient('POST', [
             'url' => 'https://ani.work/api/v1/statuses',
